@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "CAPEX_STAKEPOOL",
+    "motivations": "The Cardano Ecosystem is full of well intentioned people, but unfortunatly also with people with big egos and people out for personal gain. Those last categories are also the people that are likely to become DReps, but for all the wrong reasons. I'm here to make sure we keep the focus on what matters. ",
+    "objectives": "My goal is to make Cardano the leading blockchain for DApps to be developed on, for DeFi, Gaming and Zero Knowledge proofs. I will always vote in favor of the path that I believe will lead us to that goal. ",
+    "paymentAddress": "addr1q90r0p9tqt3kpzvueaz7xqk53sdsthzuag2hex6yznnt2tlxr4qw2h8zhpf5lw6uryvd5zduvtwa357kjyc8gse42mqspte04y",
+    "qualifications": "I have been a Stake Pool Operator since day one and have been involved in the Cardano community for years. This can be seen by the preformance and block history of the CAPEX stakepool. Professionally I have a PhD in Molecular Biology and work as Lead Systems Engineer in the development of In Vitro Diagnostic Devices.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Website of the CAPEX stakepool",
+        "uri": "https://www.cardano-pool.eu/"
+      }
+    ]
+  }
+}
